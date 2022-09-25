@@ -1,44 +1,41 @@
-import React, { useState } from 'react';
-import { Text, TouchableWithoutFeedback } from 'react-native';
+import React, { useState } from 'react'
+import { Text, TouchableWithoutFeedback } from 'react-native'
+import firestore from '@react-native-firebase/firestore'
+import auth from '@react-native-firebase/auth'
 import {
-    Container,
-    Modal,
-    ModalContent,
-    Title,
-    Input,
-    ButtonCreate,
-    ButtonText,
-    BackButton,
-} from './styles';
-
-import firestore from '@react-native-firebase/firestore';
-import auth from '@react-native-firebase/auth';
+  Container,
+  Modal,
+  ModalContent,
+  Title,
+  Input,
+  ButtonCreate,
+  ButtonText,
+  BackButton,
+} from './styles'
 
 export default function ModalNewRoom({ setVisible, setUpdateScreen }) {
+  const [roomName, setRoomName] = useState('')
 
-    const [roomName, setRoomName] = useState('');
+  const user = auth().currentUser.toJSON()
 
-    const user = auth().currentUser.toJSON();
+  function createRoom() {
+    firestore()
+      .collection('MUSICAS_THREADS')
+      .add({
+        name: roomName,
+        owner: user.uid,
+      })
+      .then(() => {
+        setVisible()
+        setUpdateScreen()
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
 
-    function createRoom() {
-        firestore()
-            .collection('MUSICAS_THREADS')
-            .add({
-                name: roomName,
-                owner: user.uid,
-            })
-            .then(() => {
-                setVisible();
-                setUpdateScreen();
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-    }
-
-    return (
+  return (
         <Container>
-
             <TouchableWithoutFeedback onPress={setVisible}>
                 <Modal></Modal>
             </TouchableWithoutFeedback>
@@ -61,5 +58,5 @@ export default function ModalNewRoom({ setVisible, setUpdateScreen }) {
                 </BackButton>
             </ModalContent>
         </Container>
-    )
+  )
 }

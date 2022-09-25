@@ -1,18 +1,22 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../../contexts/auth';
-
-import { Container, DashBoardPanel, IndroductionText, BooksContainer, Button, ButtonText } from './styles';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
-import { useNavigation } from '@react-navigation/native';
-
-import { Header } from '../../components/Header';
+import React, { useContext } from 'react'
+import { useNavigation } from '@react-navigation/native'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import { AuthContext } from '../../contexts/auth'
+import { Header } from '../../components/Header'
+import { 
+  Container, 
+  DashBoardPanel, 
+  IndroductionText, 
+  BooksContainer, 
+  Button, 
+  ButtonText,
+} from './styles'
 
 export default function Dashboard() {
-    const navigation = useNavigation();
-    const { user } = useContext(AuthContext);
+  const navigation = useNavigation()
+  const { user } = useContext(AuthContext)
 
-    return (
+  return (
         <Container>
             <Header />
             <DashBoardPanel>
@@ -38,5 +42,5 @@ export default function Dashboard() {
                 </BooksContainer>
             </DashBoardPanel>
         </Container>
-    )
+  )
 }

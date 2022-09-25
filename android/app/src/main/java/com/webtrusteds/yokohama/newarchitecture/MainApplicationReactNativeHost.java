@@ -1,4 +1,4 @@
-package com.webtrusted.atami.newarchitecture;
+package com.webtrusteds.yokohama.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.webtrusted.atami.BuildConfig;
-import com.webtrusted.atami.newarchitecture.components.MainComponentsRegistry;
-import com.webtrusted.atami.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.webtrusteds.yokohama.BuildConfig;
+import com.webtrusteds.yokohama.newarchitecture.components.MainComponentsRegistry;
+import com.webtrusteds.yokohama.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

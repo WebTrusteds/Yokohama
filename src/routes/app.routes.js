@@ -1,45 +1,45 @@
-import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React from 'react'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 
-import Textos from '../pages/Textos';
-import Galeria from '../pages/Galeria';
+import Textos from '../pages/Textos'
+import Galeria from '../pages/Galeria'
 
-import Dashboard from '../pages/Dashboard';
+import Dashboard from '../pages/Dashboard'
 
-import Notifications from '../pages/Notifications';
-import Profile from '../pages/Profile';
+import Notifications from '../pages/Notifications'
+import Profile from '../pages/Profile'
 
 /* hidden */
-import Flertes from '../pages/Flertes';
-import Musica from '../pages/Musica';
+import Flertes from '../pages/Flertes'
+import Musica from '../pages/Musica'
 
-import TextChannel from '../pages/TextChannel';
-import TextinhoSearch from '../pages/Textos/Search';
+import TextChannel from '../pages/TextChannel'
+import TextinhoSearch from '../pages/Textos/Search'
 
-import FlertesChannel from '../pages/FletesChannel';
-import FlertesSearch from '../pages/Flertes/Search';
+import FlertesChannel from '../pages/FletesChannel'
+import FlertesSearch from '../pages/Flertes/Search'
 
-import MusicasChannel from '../pages/MusicasChannel';
-import MusicasSearch from '../pages/Musica/Search';
-import ImageOpened from '../pages/Galeria/Image';
+import MusicasChannel from '../pages/MusicasChannel'
+import MusicasSearch from '../pages/Musica/Search'
+import ImageOpened from '../pages/Galeria/Image'
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
 
 export default function AppRoutes() {
-    return (
+  return (
         <Tab.Navigator
             screenOptions={{
-                tabBarStyle: {
-                    backgroundColor: '#252A34',
-                    borderTopColor: '#fff',
-                    height: 80,
-                },
-                tabBarLabelStyle: {
-                    display: 'none'
-                },
-                tabBarActiveTintColor: '#fff',
+              tabBarStyle: {
+                backgroundColor: '#252A34',
+                borderTopColor: '#fff',
+                height: 80,
+              },
+              tabBarLabelStyle: {
+                display: 'none',
+              },
+              tabBarActiveTintColor: '#fff',
             }}
             initialRouteName='Dashboard'
         >
@@ -49,10 +49,10 @@ export default function AppRoutes() {
                 component={Textos}
                 options={
                     {
-                        headerShown: false,
-                        tabBarIcon: ({ size, color }) => (
+                      headerShown: false,
+                      tabBarIcon: ({ size, color }) => (
                             <MaterialIcons name='menu-book' size={size} color={color} />
-                        )
+                      ),
                     }
                 }
             />
@@ -61,24 +61,23 @@ export default function AppRoutes() {
                 component={Dashboard}
                 options={
                     {
-                        headerShown: false,
-                        tabBarIcon: ({ size, color }) => (
+                      headerShown: false,
+                      tabBarIcon: ({ size, color }) => (
                             <MaterialIcons name='favorite-border' size={size} color={color} />
-                        )
+                      ),
                     }
                 }
             />
-
 
             <Tab.Screen
                 name="Notifications"
                 component={Notifications}
                 options={
                     {
-                        headerShown: false,
-                        tabBarIcon: ({ size, color }) => (
+                      headerShown: false,
+                      tabBarIcon: ({ size, color }) => (
                             <MaterialIcons name='notifications' size={size} color={color} />
-                        )
+                      ),
                     }
                 }
             />
@@ -88,10 +87,10 @@ export default function AppRoutes() {
                 component={Profile}
                 options={
                     {
-                        headerShown: false,
-                        tabBarIcon: ({ size, color }) => (
+                      headerShown: false,
+                      tabBarIcon: ({ size, color }) => (
                             <MaterialIcons name='account-circle' size={size} color={color} />
-                        )
+                      ),
                     }
                 }
             />
@@ -103,9 +102,9 @@ export default function AppRoutes() {
                 component={Galeria}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false,
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -114,9 +113,9 @@ export default function AppRoutes() {
                 component={Flertes}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -125,9 +124,9 @@ export default function AppRoutes() {
                 component={Musica}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -136,9 +135,9 @@ export default function AppRoutes() {
                 component={Textos}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -149,9 +148,9 @@ export default function AppRoutes() {
                 component={TextChannel}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -160,9 +159,9 @@ export default function AppRoutes() {
                 component={TextinhoSearch}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -173,9 +172,9 @@ export default function AppRoutes() {
                 component={FlertesChannel}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -184,9 +183,9 @@ export default function AppRoutes() {
                 component={FlertesSearch}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -197,9 +196,9 @@ export default function AppRoutes() {
                 component={MusicasChannel}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -208,9 +207,9 @@ export default function AppRoutes() {
                 component={MusicasSearch}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
@@ -221,12 +220,12 @@ export default function AppRoutes() {
                 component={ImageOpened}
                 options={
                     {
-                        headerShown: false,
-                        tabBarButton: () => null,
-                        tabBarVisible: false
+                      headerShown: false,
+                      tabBarButton: () => null,
+                      tabBarVisible: false,
                     }
                 }
             />
         </Tab.Navigator>
-    )
+  )
 }

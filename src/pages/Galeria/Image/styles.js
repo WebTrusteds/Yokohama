@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-`;
+`
 
 export const Picture = styled.Image`
   flex: 1;
-`;
+`
 
 export const NavBar = styled.View`
   background-color: rgba(0, 0, 0, 0.5);
@@ -15,7 +15,7 @@ export const NavBar = styled.View`
   padding: 10px 0px 10px 10px;
   position: absolute;
   width: 100%;
-`;
+`
 
 export const Title = styled.Text`
   margin-left: 20px;
@@ -23,4 +23,4 @@ export const Title = styled.Text`
   font-weight: bold;
   font-size: 20px;
   color: #f0f0f0;
-`;
+`

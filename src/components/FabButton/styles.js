@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Button = styled.TouchableOpacity`
   background-color: #FFE2A2;
@@ -11,14 +11,13 @@ export const Button = styled.TouchableOpacity`
   position: absolute;
   bottom: 5%;
   right: 5%;
-`;
+`
 
 export const View = styled.View`
 
-`;
+`
 
 export const Content = styled.Text`
   font-size: 28px;
   color: #171717;
-  font-width: bold;
-`;
+`

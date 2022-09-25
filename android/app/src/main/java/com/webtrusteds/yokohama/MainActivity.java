@@ -1,4 +1,4 @@
-package com.webtrusted.atami;
+package com.webtrusteds.yokohama;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.webtrusted.atami">
+  package="com.webtrusteds.yokohama">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

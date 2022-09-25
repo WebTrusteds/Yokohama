@@ -1,51 +1,51 @@
-import React, { useState, useContext } from 'react';
-import { Container, NavBar, NavBarLeft, Button, Title } from './styles';
-import { SafeAreaView, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { launchImageLibrary } from 'react-native-image-picker';
-import storage from '@react-native-firebase/storage';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
-import GalleryList from '../../components/Gallery/GalleryList';
+import React from 'react'
+import { useNavigation } from '@react-navigation/native'
+import { launchImageLibrary } from 'react-native-image-picker'
+import storage from '@react-native-firebase/storage'
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
+import { 
+  Container, 
+  NavBar, 
+  NavBarLeft, 
+  Button, 
+  Title,
+} from './styles'
+import GalleryList from '../../components/Gallery/GalleryList'
 
 export default function Galeria() {
-    const navigation = useNavigation();
+  const navigation = useNavigation()
 
-    const uploadFile = () => {
-        const options = {
-            noData: true,
-            mediaType: 'photo'
-        };
-
-        launchImageLibrary(options, response => {
-            if (response.didCancel) {
-                console.log("Cancelouu!");
-            } else if (response.error) {
-                console.log("Ops parece que deu algum erro")
-            } else {
-                uploadFileFirebase(response)
-                    .then(() => {
-                        //
-                    })
-            }
-        })
-
+  const uploadFile = () => {
+    const options = {
+      noData: true,
+      mediaType: 'photo',
     }
 
-    const getFileLocalPath = (response) => {
-        return response.assets[0].uri;
-    }
+    launchImageLibrary(options, (response) => {
+      if (response.didCancel) {
+        console.log('Cancelouu!')
+      } else if (response.error) {
+        console.log('Ops parece que deu algum erro')
+      } else {
+        uploadFileFirebase(response)
+          .then(() => {})
+      }
+    })
+  }
 
-    const uploadFileFirebase = async (response) => {
-        const assets = response.assets;
-        const result = assets.map(item => { return (item.fileName.slice(0, item.fileName.lastIndexOf('.'))) });
-        const fileSource = getFileLocalPath(response);
-        const storageRef = storage().ref("gallery").child(result[0]);
-        return await storageRef.putFile(fileSource)
-    }
+  const getFileLocalPath = (response) => {
+    return response.assets[0].uri
+  }
 
+  const uploadFileFirebase = async (response) => {
+    const [assets] = response.assets
+    const result = assets.map((item) => { return (item.fileName.slice(0, item.fileName.lastIndexOf('.'))) })
+    const fileSource = getFileLocalPath(response)
+    const storageRef = storage().ref('gallery').child(result[0])
+    return await storageRef.putFile(fileSource)
+  }
 
-    return (
+  return (
         <Container>
             <NavBar>
                 <NavBarLeft>
@@ -60,5 +60,5 @@ export default function Galeria() {
             </NavBar>
             <GalleryList />
         </Container>
-    )
+  )
 }

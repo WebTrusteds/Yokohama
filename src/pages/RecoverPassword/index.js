@@ -1,41 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
+import auth from '@react-native-firebase/auth'
+import { Alert } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import { HeaderBack } from '../../components/RecoverPassword/HeaderBack'
 import {
-    Container,
-    Content,
-    Title,
-    Description,
-    Input,
-    Button,
-    ButtonText
-} from './styles';
-import { HeaderBack } from './../../components/RecoverPassword/HeaderBack';
-
-import auth from '@react-native-firebase/auth';
-import { Alert } from 'react-native';
-
-import { NavigationHelpersContext, useNavigation } from '@react-navigation/native';
+  Container,
+  Content,
+  Title,
+  Description,
+  Input,
+  Button,
+  ButtonText,
+} from './styles'
 
 export default function RecoverPassword() {
-    const [email, setEmail] = useState('')
+  const [email, setEmail] = useState('')
+  const navigation = useNavigation()
 
-    const navigation = useNavigation();
-
-    async function handleForgetPassword() {
-        if (email === '') {
-            Alert.alert("Informe o email")
-        }
-
-        auth().sendPasswordResetEmail(email)
-            .then(() => {
-                navigation.navigate('RecoverRedirect')
-            })
+  async function handleForgetPassword() {
+    if (email === '') {
+      Alert.alert('Informe o email')
     }
+    auth().sendPasswordResetEmail(email)
+      .then(() => {
+        navigation.navigate('RecoverRedirect')
+      })
+  }
 
-    return (
+  return (
         <Container>
             <HeaderBack />
             <Title>Recuperar Senha</Title>
-            <Description>Insira o e-mail associado à sua conta e enviaremos um e-mail com instruções para redefirmos sua senha.</Description>
+            <Description>Insira o e-mail associado à sua conta e enviaremos um e-mail com 
+            instruções para redefirmos sua senha.</Description>
             <Content>
                 <Input
                     value={email}
@@ -48,5 +45,5 @@ export default function RecoverPassword() {
                 </Button>
             </Content>
         </Container>
-    )
+  )
 }

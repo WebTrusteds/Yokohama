@@ -1,58 +1,60 @@
-import React, { useState, useContext } from 'react';
-
+import React, { useState, useContext } from 'react'
+import { 
+  Platform, 
+  KeyboardAvoidingView, 
+  ActivityIndicator, 
+  Alert,
+} from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+import { AuthContext } from '../../contexts/auth'
 import {
-    Container,
-    Title,
-    Description,
-    Inputs,
-    Button,
-    ButtonText,
-    ChangeScreen,
-    ChangeScreenText,
-} from './styles';
-
-import { Platform, KeyboardAvoidingView, ActivityIndicator, Alert } from 'react-native';
-
-import { useNavigation } from '@react-navigation/native';
-
-import { AuthContext } from '../../contexts/auth';
+  Container,
+  Title,
+  Description,
+  Inputs,
+  Button,
+  ButtonText,
+  ChangeScreen,
+  ChangeScreenText,
+} from './styles'
 
 export default function Login() {
-    const [login, setLogin] = useState(true);
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+  const [login, setLogin] = useState(true)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-    const { signIn, signUp, loadingAuth } = useContext(AuthContext);
+  const { signIn, signUp, loadingAuth } = useContext(AuthContext)
 
-    const navigation = useNavigation();
+  const navigation = useNavigation()
 
-    function toggleLogin() {
-        setLogin(!login)
-        setName('')
-        setEmail('')
-        setPassword('')
+  function toggleLogin() {
+    setLogin(!login)
+    setName('')
+    setEmail('')
+    setPassword('')
+  }
+
+  async function handleSignIn() {
+    if (email === '' || password === '') {
+      Alert.alert('PREENCHA TODOS OS CAMPOS')
+      return
     }
 
-    async function handleSignIn() {
-        if (email === '' || password === '') {
-            Alert.alert("PREENCHA TODOS OS CAMPOS")
-            return;
-        }
+    await signIn(email, password)
+  }
 
-        await signIn(email, password)
+  async function handleSignUp() {
+    if (name === '' || email === '' || password === '') {
+      Alert.alert('PREENCHA TODOS OS CAMPOS PARA CADASTRAR')
+      return
     }
 
-    async function handleSignUp() {
-        if (name === '' || email === '' || password === '') {
-            Alert.alert("PREENCHA TODOS OS CAMPOS PARA CADASTRAR")
-            return;
-        }
+    await signUp(email, password, name)
+  }
 
-        await signUp(email, password, name)
-    }
-    if (login) {
-        return (
+  if (login) {
+    return (
             <Container>
                 <Title>Bem-Vindo!</Title>
                 <Description>Por favor inicie com sua conta</Description>
@@ -65,21 +67,21 @@ export default function Login() {
                     <Inputs
                         value={email}
                         onChangeText={(text) => setEmail(text)}
-                        placeholder="E-mail"
-                        placeholderTextColor="#C6C6CB"
+                        placeholder='E-mail'
+                        placeholderTextColor='#C6C6CB'
                     />
 
                     <Inputs
                         value={password}
                         onChangeText={(text) => setPassword(text)}
-                        placeholder="Senha"
-                        placeholderTextColor="#C6C6CB"
+                        placeholder='Senha'
+                        placeholderTextColor='#C6C6CB'
                         secureTextEntry={true}
                     />
 
                     <Button onPress={handleSignIn}>
                         {loadingAuth ? (
-                            <ActivityIndicator size={20} color="#FFF" />
+                            <ActivityIndicator size={20} color='#FFF' />
                         ) : (
                             <ButtonText>Entrar</ButtonText>
                         )}
@@ -93,34 +95,32 @@ export default function Login() {
                     </ChangeScreen>
                 </KeyboardAvoidingView>
             </Container>
-        )
-    }
+    )
+  }
 
-    return (
-
-
+  return (
         <Container>
             <Title>Crie uma nova conta</Title>
             <Description>Preencha tudo para continuar</Description>
             <Inputs
                 value={name}
                 onChangeText={(text) => setName(text)}
-                placeholder="Name"
-                placeholderTextColor="#C6C6CB"
+                placeholder='Name'
+                placeholderTextColor='#C6C6CB'
             />
 
             <Inputs
                 value={email}
                 onChangeText={(text) => setEmail(text)}
-                placeholder="Email"
-                placeholderTextColor="#C6C6CB"
+                placeholder='Email'
+                placeholderTextColor='#C6C6CB'
             />
 
             <Inputs
                 value={password}
                 onChangeText={(text) => setPassword(text)}
-                placeholder="Password"
-                placeholderTextColor="#C6C6CB"
+                placeholder='Password'
+                placeholderTextColor='#C6C6CB'
                 secureTextEntry={true}
             />
 
@@ -132,5 +132,5 @@ export default function Login() {
                 <ChangeScreenText>Já possuo uma conta</ChangeScreenText>
             </ChangeScreen>
         </Container>
-    )
+  )
 }

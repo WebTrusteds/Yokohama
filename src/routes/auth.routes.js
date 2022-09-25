@@ -1,22 +1,22 @@
-import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import Login from '../pages/Login';
-import Home from '../pages/Home';
-import RecoverPassword from '../pages/RecoverPassword';
-import RecoverPasswordRedirect from '../pages/RecoverPasswordRedirect';
+import Login from '../pages/Login'
+import Home from '../pages/Home'
+import RecoverPassword from '../pages/RecoverPassword'
+import RecoverPasswordRedirect from '../pages/RecoverPasswordRedirect'
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
 
 export default function AppRoutes() {
-    return (
+  return (
         <Stack.Navigator initialRouteName='Home'>
             <Stack.Screen
                 name="Home"
                 component={Home}
                 options={
                     {
-                        headerShown: false
+                      headerShown: false,
                     }
                 }
             />
@@ -25,7 +25,7 @@ export default function AppRoutes() {
                 component={Login}
                 options={
                     {
-                        headerShown: false
+                      headerShown: false,
                     }
                 }
             />
@@ -34,7 +34,7 @@ export default function AppRoutes() {
                 component={RecoverPassword}
                 options={
                     {
-                        headerShown: false
+                      headerShown: false,
                     }
                 }
             />
@@ -43,10 +43,10 @@ export default function AppRoutes() {
                 component={RecoverPasswordRedirect}
                 options={
                     {
-                        headerShown: false
+                      headerShown: false,
                     }
                 }
             />
         </Stack.Navigator>
-    )
+  )
 }

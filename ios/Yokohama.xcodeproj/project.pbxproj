@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* atamiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* atamiTests.m */; };
+		00E356F31AD99517003FC87E /* YokohamaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* YokohamaTests.m */; };
 		09D69A181B164388B3696EB3 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5DFBCA552224980A67977EB /* Poppins-Regular.ttf */; };
 		0D90EC5927714E85974776C6 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C6BE07FD1A948B5951C09A2 /* Poppins-ThinItalic.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
@@ -42,9 +42,9 @@
 		275A3E8828B8467E00EC609F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 278E01AE28B6F30D0038CF28 /* MaterialIcons.ttf */; };
 		46688CE0298842FABB76734C /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF8854129EA14AA8920989CB /* Poppins-Thin.ttf */; };
 		4DC54D481FEF4A5D8BF9240B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E019F28BCA2D4EF384DCE721 /* Poppins-Medium.ttf */; };
-		559C904FB765E31794ABF0CB /* Pods_atami_atamiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8048FB40927D17221C18205E /* Pods_atami_atamiTests.framework */; };
+		559C904FB765E31794ABF0CB /* Pods_Yokohama_YokohamaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8048FB40927D17221C18205E /* Pods_Yokohama_YokohamaTests.framework */; };
 		6F1E64A6800F4BB9AB941571 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 926C304078B44C2FBE0E3932 /* Poppins-ExtraBoldItalic.ttf */; };
-		7469512B834C6627924A2FD3 /* Pods_atami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEBA14BEAF355676B87E85B /* Pods_atami.framework */; };
+		7469512B834C6627924A2FD3 /* Pods_Yokohama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEBA14BEAF355676B87E85B /* Pods_Yokohama.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		88D09E08FDA34122B3D56320 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64D1A1B75CB04D66AEAF5D2A /* Poppins-ExtraLightItalic.ttf */; };
 		919356B403934127AE7D5F15 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 181CC1B4542B45578B751EA2 /* Poppins-LightItalic.ttf */; };
@@ -65,20 +65,20 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = atami;
+			remoteInfo = Yokohama;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* atamiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = atamiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* YokohamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YokohamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* atamiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = atamiTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* atami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atami.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = atami/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = atami/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = atami/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = atami/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = atami/main.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* YokohamaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YokohamaTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Yokohama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yokohama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Yokohama/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Yokohama/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Yokohama/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Yokohama/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Yokohama/main.m; sourceTree = "<group>"; };
 		17D056E68E5F4B74ABED15B3 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		181CC1B4542B45578B751EA2 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		275A3E8028B8430500EC609F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -103,17 +103,17 @@
 		2A3B37266752479BAD3A3E0B /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		2C6BE07FD1A948B5951C09A2 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
 		309854CF3CE40A90E418E354 /* Pods-Atami-AtamiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atami-AtamiTests.debug.xcconfig"; path = "Target Support Files/Pods-Atami-AtamiTests/Pods-Atami-AtamiTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-atami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami.debug.xcconfig"; path = "Target Support Files/Pods-atami/Pods-atami.debug.xcconfig"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-Yokohama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yokohama.debug.xcconfig"; path = "Target Support Files/Pods-Yokohama/Pods-Yokohama.debug.xcconfig"; sourceTree = "<group>"; };
 		443D5D8A733646F19FF55014 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		465084533CD640F6A34584B6 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-atami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami.release.xcconfig"; path = "Target Support Files/Pods-atami/Pods-atami.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-atami-atamiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-atamiTests.debug.xcconfig"; path = "Target Support Files/Pods-atami-atamiTests/Pods-atami-atamiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-Yokohama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yokohama.release.xcconfig"; path = "Target Support Files/Pods-Yokohama/Pods-Yokohama.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-Yokohama-YokohamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yokohama-YokohamaTests.debug.xcconfig"; path = "Target Support Files/Pods-Yokohama-YokohamaTests/Pods-Yokohama-YokohamaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		612F7800702043F7AD2E87B6 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		64D1A1B75CB04D66AEAF5D2A /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		6E81E8DD2F8BF07226EEE4B1 /* Pods-Atami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atami.release.xcconfig"; path = "Target Support Files/Pods-Atami/Pods-Atami.release.xcconfig"; sourceTree = "<group>"; };
-		8048FB40927D17221C18205E /* Pods_atami_atamiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atami_atamiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = atami/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-atami-atamiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atami-atamiTests.release.xcconfig"; path = "Target Support Files/Pods-atami-atamiTests/Pods-atami-atamiTests.release.xcconfig"; sourceTree = "<group>"; };
+		8048FB40927D17221C18205E /* Pods_Yokohama_YokohamaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yokohama_YokohamaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Yokohama/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-Yokohama-YokohamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yokohama-YokohamaTests.release.xcconfig"; path = "Target Support Files/Pods-Yokohama-YokohamaTests/Pods-Yokohama-YokohamaTests.release.xcconfig"; sourceTree = "<group>"; };
 		926C304078B44C2FBE0E3932 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		98DDDB299253449CA1C08963 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		A458F1E2B3264CD1F2944A3B /* Pods-Atami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atami.debug.xcconfig"; path = "Target Support Files/Pods-Atami/Pods-Atami.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		B87621797819496088813A4D /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		BF8854129EA14AA8920989CB /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		E019F28BCA2D4EF384DCE721 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		EAEBA14BEAF355676B87E85B /* Pods_atami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_atami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEBA14BEAF355676B87E85B /* Pods_Yokohama.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yokohama.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC665A9C98CA43858E935266 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F66F2824CA778F3D3719CFAE /* Pods-Atami-AtamiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atami-AtamiTests.release.xcconfig"; path = "Target Support Files/Pods-Atami-AtamiTests/Pods-Atami-AtamiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				559C904FB765E31794ABF0CB /* Pods_atami_atamiTests.framework in Frameworks */,
+				559C904FB765E31794ABF0CB /* Pods_Yokohama_YokohamaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,20 +143,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7469512B834C6627924A2FD3 /* Pods_atami.framework in Frameworks */,
+				7469512B834C6627924A2FD3 /* Pods_Yokohama.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* atamiTests */ = {
+		00E356EF1AD99517003FC87E /* YokohamaTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* atamiTests.m */,
+				00E356F21AD99517003FC87E /* YokohamaTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = atamiTests;
+			path = YokohamaTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -167,7 +167,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* atami */ = {
+		13B07FAE1A68108700A75B9A /* Yokohama */ = {
 			isa = PBXGroup;
 			children = (
 				278E01A628B6F2BA0038CF28 /* Fonts */,
@@ -178,7 +178,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = atami;
+			name = Yokohama;
 			sourceTree = "<group>";
 		};
 		278E01A628B6F2BA0038CF28 /* Fonts */ = {
@@ -211,8 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				EAEBA14BEAF355676B87E85B /* Pods_atami.framework */,
-				8048FB40927D17221C18205E /* Pods_atami_atamiTests.framework */,
+				EAEBA14BEAF355676B87E85B /* Pods_Yokohama.framework */,
+				8048FB40927D17221C18205E /* Pods_Yokohama_YokohamaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,9 +227,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* atami */,
+				13B07FAE1A68108700A75B9A /* Yokohama */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* atamiTests */,
+				00E356EF1AD99517003FC87E /* YokohamaTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -244,8 +244,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* atami.app */,
-				00E356EE1AD99517003FC87E /* atamiTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Yokohama.app */,
+				00E356EE1AD99517003FC87E /* YokohamaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,10 +278,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-atami.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-atami.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-atami-atamiTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-atami-atamiTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-Yokohama.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-Yokohama.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-Yokohama-YokohamaTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-Yokohama-YokohamaTests.release.xcconfig */,
 				A458F1E2B3264CD1F2944A3B /* Pods-Atami.debug.xcconfig */,
 				6E81E8DD2F8BF07226EEE4B1 /* Pods-Atami.release.xcconfig */,
 				309854CF3CE40A90E418E354 /* Pods-Atami-AtamiTests.debug.xcconfig */,
@@ -293,9 +293,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* atamiTests */ = {
+		00E356ED1AD99517003FC87E /* YokohamaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "atamiTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "YokohamaTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -308,14 +308,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = atamiTests;
-			productName = atamiTests;
-			productReference = 00E356EE1AD99517003FC87E /* atamiTests.xctest */;
+			name = YokohamaTests;
+			productName = YokohamaTests;
+			productReference = 00E356EE1AD99517003FC87E /* YokohamaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* atami */ = {
+		13B07F861A680F5B00A75B9A /* Yokohama */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "atami" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Yokohama" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -330,9 +330,9 @@
 			);
 			dependencies = (
 			);
-			name = atami;
-			productName = atami;
-			productReference = 13B07F961A680F5B00A75B9A /* atami.app */;
+			name = Yokohama;
+			productName = Yokohama;
+			productReference = 13B07F961A680F5B00A75B9A /* Yokohama.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -365,8 +365,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* atami */,
-				00E356ED1AD99517003FC87E /* atamiTests */,
+				13B07F861A680F5B00A75B9A /* Yokohama */,
+				00E356ED1AD99517003FC87E /* YokohamaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -456,15 +456,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-atami/Pods-atami-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Yokohama/Pods-Yokohama-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-atami/Pods-atami-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Yokohama/Pods-Yokohama-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atami/Pods-atami-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yokohama/Pods-Yokohama-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2C00722720C16241ADBBB384 /* [CP-User] [RNFB] Core Configuration */ = {
@@ -495,7 +495,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-atami-atamiTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Yokohama-YokohamaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -517,7 +517,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-atami-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Yokohama-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -530,15 +530,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-atami-atamiTests/Pods-atami-atamiTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Yokohama-YokohamaTests/Pods-Yokohama-YokohamaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-atami-atamiTests/Pods-atami-atamiTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Yokohama-YokohamaTests/Pods-Yokohama-YokohamaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-atami-atamiTests/Pods-atami-atamiTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yokohama-YokohamaTests/Pods-Yokohama-YokohamaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -567,7 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* atamiTests.m in Sources */,
+				00E356F31AD99517003FC87E /* YokohamaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +585,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* atami */;
+			target = 13B07F861A680F5B00A75B9A /* Yokohama */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -593,14 +593,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-atami-atamiTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-Yokohama-YokohamaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = atamiTests/Info.plist;
+				INFOPLIST_FILE = YokohamaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -614,17 +614,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atami.app/atami";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yokohama.app/Yokohama";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-atami-atamiTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-Yokohama-YokohamaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = atamiTests/Info.plist;
+				INFOPLIST_FILE = YokohamaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,19 +638,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atami.app/atami";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yokohama.app/Yokohama";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-atami.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-Yokohama.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = atami/Info.plist;
+				INFOPLIST_FILE = Yokohama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,8 +660,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.webtrusted.atami;
-				PRODUCT_NAME = atami;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webtrusted.Yokohama;
+				PRODUCT_NAME = Yokohama;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -670,12 +670,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-atami.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-Yokohama.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = atami/Info.plist;
+				INFOPLIST_FILE = Yokohama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -685,8 +685,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.webtrusted.atami;
-				PRODUCT_NAME = atami;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webtrusted.Yokohama;
+				PRODUCT_NAME = Yokohama;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -832,7 +832,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "atamiTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "YokohamaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -841,7 +841,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "atami" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Yokohama" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

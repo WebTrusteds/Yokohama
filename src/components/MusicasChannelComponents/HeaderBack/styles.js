@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Header = styled.View`
   margin-top: 15px;
-`;
+`
 
 export const HeaderButton = styled.TouchableOpacity`
   margin-left: 5%;
@@ -13,7 +13,7 @@ export const HeaderButton = styled.TouchableOpacity`
   border-radius: 5px;
   width: 50px;
   height: 50px;
-`;
+`
 
 export const HeaderText = styled.Text`
   font-family: 'Poppins-Bold';
@@ -24,4 +24,4 @@ export const HeaderText = styled.Text`
   margin-bottom: 1.5%;
   margin-left: 25%;
   margin-top: 2.5%;
-`;
+`

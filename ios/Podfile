@@ -12,7 +12,7 @@ production = ENV["PRODUCTION"] == "1"
 pod 'lottie-ios', :path => '../node_modules/lottie-ios'
 pod 'lottie-react-native', :path => '../node_modules/lottie-react-native'
 
-target 'atami' do
+target 'Yokohama' do
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -29,7 +29,7 @@ target 'atami' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'atamiTests' do
+  target 'YokohamaTests' do
     inherit! :complete
     # Pods for testing
   end

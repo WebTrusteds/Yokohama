@@ -1,17 +1,21 @@
-import React from 'react';
-import { Container, Row, Content, Header, NameText } from './styles';
-
-import { useNavigation } from '@react-navigation/native';
+import React from 'react'
+import { useNavigation } from '@react-navigation/native'
+import { 
+  Container, 
+  Row, 
+  Content,
+  Header, 
+  NameText,
+} from './styles'
 
 export default function ChatList({ data, deleteRoom }) {
+  const navigation = useNavigation()
 
-    const navigation = useNavigation();
+  function openChat() {
+    navigation.navigate('TextinhosMessages', { thread: data })
+  }
 
-    function openChat() {
-        navigation.navigate("TextinhosMessages", { thread: data })
-    }
-
-    return (
+  return (
         <Container onPress={openChat} onLongPress={() => deleteRoom && deleteRoom()}>
             <Row>
                 <Content>
@@ -21,5 +25,5 @@ export default function ChatList({ data, deleteRoom }) {
                 </Content>
             </Row>
         </Container>
-    )
+  )
 }

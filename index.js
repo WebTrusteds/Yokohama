@@ -2,19 +2,17 @@
  * @format
  */
 
-import { AppRegistry, Platform } from 'react-native';
-import App from './App';
-import './Notifications';
-import PushNotification from 'react-native-push-notification';
+import { AppRegistry, Platform } from 'react-native'
+import PushNotification from 'react-native-push-notification'
+import App from './App'
+import './Notifications'
 
 PushNotification.configure({
-    onNotification: function (notification) {
-        console.log("Notification", notification);
-    },
+  onNotification: (notification) => { console.log('Notification', notification) },
 })
 
 if (Platform.OS === 'android') {
-    AppRegistry.registerComponent("Atami", () => App);
+  AppRegistry.registerComponent('Atami', () => App)
 } else {
-    AppRegistry.registerComponent("atami", () => App);
+  AppRegistry.registerComponent('Yokohama', () => App)
 }

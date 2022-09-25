@@ -1,4 +1,4 @@
-package com.webtrusted.atami.newarchitecture.components;
+package com.webtrusteds.yokohama.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

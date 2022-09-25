@@ -1,17 +1,17 @@
-import styled from 'styled-components/native';
-import { Platform } from 'react-native';
+import styled from 'styled-components/native'
+import { Platform } from 'react-native'
 
 export const Container = styled.SafeAreaView`
     flex: 1;
     background-color: #181920;
-`;
+`
 
 export const DashBoardPanel = styled.View.attrs({
-    marginTop: Platform.OS === 'android' ? 20 : 15,
+  marginTop: Platform.OS === 'android' ? 20 : 15,
 })`
     flex: 1;
     display: flex;
-`;
+`
 
 export const IndroductionText = styled.Text`
     font-family: 'Poppins-Bold';
@@ -20,10 +20,11 @@ export const IndroductionText = styled.Text`
     color: #fff;
     font-size: 26px;
     margin-left: 20px;
-`;
+`
 
 export const BooksContainer = styled.ScrollView`
-`;
+
+`
 
 export const Button = styled.TouchableOpacity`
     background-color: #252A34;
@@ -36,7 +37,7 @@ export const Button = styled.TouchableOpacity`
     display: flex;
     padding: 20px;
     border-radius: 13px;
-`;
+`
 
 export const ButtonText = styled.Text`
     font-family: 'Poppins-Bold';
@@ -46,4 +47,4 @@ export const ButtonText = styled.Text`
     margin-left: 35%;
     margin-top: 9%;
     font-size: 25px;
-`;
+`
